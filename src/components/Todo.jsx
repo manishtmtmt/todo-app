@@ -12,6 +12,7 @@ const Todo = () => {
 
   return (
     <div>
+      <h1>Todo App</h1>
       Todo{" "}
       <input
         value={newTodo}
