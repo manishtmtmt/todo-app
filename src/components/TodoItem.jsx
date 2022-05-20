@@ -10,7 +10,7 @@ const TodoItem = ({ todo, onDelete }) => {
         checked={isCompleted}
         onChange={(e) => setIsCompleted(e.target.checked)}
       />
-      <div>{todo.value}</div>
+      <div className={isCompleted ? styles.completed : ""}>{todo.value}</div>
       <button onClick={()=>onDelete(todo.id)}>Remove</button>
     </div>
   );
